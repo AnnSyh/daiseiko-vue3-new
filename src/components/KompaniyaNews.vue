@@ -17,7 +17,7 @@
 								<div class="cards-holder-non-grid">
 									<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 cell-location-2-3">
 										
-										<div v-for="item in cards" :key="cards.id" data-aos="slide-up" class="repeater-list-item aos-init aos-animate">
+										<div v-for="item in cards" :key="item.id" data-aos="slide-up" class="repeater-list-item aos-init aos-animate">
 
 											<div
 												class="card h-full flex flex-col theme-light text-center border-0 hover-shadow p-0 non-plain">
@@ -36,7 +36,7 @@
 															<p class="tt-p">{{ item.description }}</p>
 														</div>
 														<div  class="block-button-wrap mt-5">
-															<a href="/article/novogodnie-nabory-forlled-i-nimue/" target="_self" class="stretched-link btn "> 
+															<a href="#" target="_self" class="stretched-link btn "> 
 																<span class="text">Подробно</span>
 															</a>
 														</div>
@@ -55,7 +55,7 @@
 							<div class="mx-auto max-w-full text-center">
 								<div class="footer-button-wrap">
 									<div class="block-button-wrap">
-										<a href="/novosti/" target="_self" class="relative btn btn-primary"> 
+										<a href="#" target="_self" class="relative btn btn-primary"> 
 											<span class="text">Еще новости</span> 
 										</a>
 									</div>

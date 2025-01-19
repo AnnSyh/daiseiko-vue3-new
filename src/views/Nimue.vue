@@ -4,6 +4,7 @@
 		<NimueMenu/>
 		<KompaniyaNimue/>
 		<NimueVideo/>
+		<NimueFeedback />
 	</div>
 </template>
 
@@ -12,12 +13,14 @@
 import NimueMenu from '@/components/NimueMenu.vue'
 import KompaniyaNimue from '@/components/KompaniyaNimue.vue'
 import NimueVideo from '@/components/NimueVideo.vue'
+import NimueFeedback from '@/components/NimueFeedback.vue'
 
 export default {
 	components: { 
 		KompaniyaNimue,
 		NimueVideo,
-		NimueMenu
+		NimueMenu,
+		NimueFeedback
 	}
 };
 </script>
