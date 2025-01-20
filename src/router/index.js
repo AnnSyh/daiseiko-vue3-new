@@ -5,6 +5,8 @@ import DomashnijUhod from '@/views/DomashnijUhod.vue'
 import Kompaniya from '@/views/Kompaniya.vue'
 import Nimue from '@/views/Nimue.vue'
 import ProductView from '@/views/ProductView.vue'
+import Novosti from '@/views/Novosti.vue'
+import NovostiView from '@/views/NovostiView.vue'
 
 
 const routes = [
@@ -13,7 +15,9 @@ const routes = [
 	{ path: '/domashnijUhod', component: DomashnijUhod},
 	{ path: '/kompaniya', component: Kompaniya},
 	{ path: '/kompaniya/nimue', component: Nimue},
-	{ path: '/professionalnaya-liniya/product', component: ProductView}
+	{ path: '/professionalnaya-liniya/product', component: ProductView},
+	{ path: '/novosti', component: Novosti},
+	{ path: '/novosti/events/', component: NovostiView}
   ];
   
   const router = createRouter({

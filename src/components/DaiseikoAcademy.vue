@@ -36,32 +36,26 @@
 								<div class="cards-holder-non-grid">
 									<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 cell-location-2-3">
 
-										<div v-for="item in cards" :key="cards.id" data-aos="slide-up"
-											class="repeater-list-item aos-init aos-animate">
-											<div
-												class="card h-full flex flex-col theme-white border-0 hover-shadow hover-transition p-0 plain-wide">
+										<div v-for="item in items" :key="item.id" data-aos="slide-up" class="aos-init aos-animate">
+											<div class="card h-full flex flex-col theme-white border-0 hover-shadow hover-transition p-0 plain-wide">
 												<div class="flex-1">
 													<div class="card-image">
-														<div for="repeater"
-															class="image-wrap float-center bg-theme-none">
-															<!-- src="/images/stop-14.webp" -->
-															<img :src="`${item.src}`" loading="eager"
-																class="block h-full object-cover w-full">
+														<div class="image-wrap float-center bg-theme-none">
+															<img :src="`${item.src}`" loading="eager" class="block h-full object-cover w-full">
 														</div>
 													</div>
 													<div class="card-body clear-both">
-														<div
-															class="min-width-10 min-height-10 fs-4 font-medium mb-3  block-text">
+														<div class="min-width-10 min-height-10 fs-4 font-medium mb-3  block-text">
 															{{ item.title }}
 														</div>
-														<div for="repeater" class="fs-5 text-secondary  block-text">
+														<div  class="fs-5 text-secondary  block-text">
 															<p class="tt-p">{{ item.description }}</p>
 														</div>
 													</div>
 												</div>
 												<div class="card-footer mx-4 py-5">
 													<div class="flex justify-between items-center">
-														<div for="repeater" class="block-button-wrap">
+														<div  class="block-button-wrap">
 															<a href="/catalog/procedury/" target="_self"
 																class="stretched-link btn ">
 																<span class="text">Ознакомиться</span>
@@ -100,33 +94,12 @@
 
 export default {
 	name: 'DaiseikoAcademy',
-	data() {
-		return {
-			cards: [
-				{
-					id: 1,
-					title: 'Процедуры',
-					src: '/images/stop-14.webp',
-					description: 'Салонные и клинические процедуры восстанавливают структуру кожи, стимулируют синтез коллагена и эластина, обеспечивают непревзойденную антиоксидантную защиту.',
-				},
-				{
-					id: 2,
-					title: 'Расписание Академии Дайсэйко',
-					src: '/images/stop-38.webp',
-					description: 'Обучение проводится на препаратах Forlle’d. Профессиональная линейка препаратов Forlle’d уникальная и единственная в мире, основанная на разработке, удостоенной Нобелевской Премии.',
-				},
-				{
-					id: 3,
-					title: 'Аксессуары косметолога',
-					src: '/images/stop-15.webp',
-					description: 'Брендированные аксессуары для комплектации и работы в кабинете косметолога и для домашнего применения.',
-				},
-
-
-			],
-		};
+	props: {
+		items: {
+			type: Array,
+			required: true,
+		},
 	},
-	props: {},
 	methods: {},
 	components: {},
 };

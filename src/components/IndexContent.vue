@@ -34,7 +34,7 @@
 							<div v-if="item.btnText" class="block-button-wrap">
 								<a :href="`${item.btnhref}`" target="_self" class="relative btn btn-primary"> 
 									<span contenteditable="false" class="text">
-										{{ item.btnText }}
+										{{ item.title }}
 									</span> 
 								</a>
 							</div>

@@ -17,7 +17,7 @@
 								<div class="cards-holder-non-grid">
 									<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 cell-location-2-3">
 										
-										<div v-for="item in cards" :key="item.id" data-aos="slide-up" class="repeater-list-item aos-init aos-animate">
+										<div v-for="item in items" :key="item.id" data-aos="slide-up" class="repeater-list-item aos-init aos-animate">
 
 											<div
 												class="card h-full flex flex-col theme-light text-center border-0 hover-shadow p-0 non-plain">
@@ -84,34 +84,12 @@
 
 export default {
 	name: 'KompaniyaNews',
-	data() {
-		return {
-			cards: [
-				{ 
-					id: 1, 
-					data:'14.11.2024',
-					title: 'Новогодние Наборы Forlle’d и Nimue', 
-					description: 'Эксклюзивные новинки юбилейного года, которые поступят в продажу в конце года, и бестселлеры брендов.',
-				},
-				{ 
-					id: 2, 
-					data:'25.09.2024',
-					title: 'Празднуем 30 лет бренда Nimue и дарим подарки', 
-					description: 'Осень — идеальное время для заботы о коже! Пилинги Nimue— это smart-технологии, mix & match, и в каждой из них: Effective & Intelligent. Love your skin!',
-				},
-				{ 
-					id: 3, 
-					data:'17.09.2024',
-					title: 'Старт специальных предложений', 
-					description: 'С сегодняшнего дня! ЮБИЛЕЙНОЕ предложение',
-				},
-			
-			
-				
-			],
-		};
+	props: {
+		items: {
+			type: Array,
+			required: true,
+		},
 	},
-	props: {},
 	methods: {},
 	components: {},
 };

@@ -1,7 +1,11 @@
 <template>
 	<div class="about">
 		<!-- <h1>Nimue page</h1> -->
-		<NimueMenu/>
+		<TopMenu
+			:menuItems="menuItems" 
+			:activeItem="activeItem" 
+			@itemSelected="handleItemSelected"
+		/>
 		<KompaniyaNimue/>
 		<NimueVideo/>
 		<NimueFeedback />
@@ -10,16 +14,26 @@
 
 
 <script>
-import NimueMenu from '@/components/NimueMenu.vue'
+import TopMenu from '@/components/TopMenu.vue'
 import KompaniyaNimue from '@/components/KompaniyaNimue.vue'
 import NimueVideo from '@/components/NimueVideo.vue'
 import NimueFeedback from '@/components/NimueFeedback.vue'
 
 export default {
+	name:'Nimue',
+	data() {
+		return {
+		menuItems: [
+			{ name: 'Forlle’d', link: '/kompaniya' },
+			{ name: 'Nimue', link: '/kompaniya/nimue' },
+		],
+		activeItem: 'Nimue', 
+		};
+	},
 	components: { 
 		KompaniyaNimue,
 		NimueVideo,
-		NimueMenu,
+		TopMenu,
 		NimueFeedback
 	}
 };
