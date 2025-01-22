@@ -31,6 +31,7 @@ export default {
 					title:'Новогодние Наборы Forlle’d и Nimue',
 					imgSrc:'/images/forlled-anons-bez-ceny_resize_w400_h400.webp',
 					content:'Эксклюзивные новинки юбилейного года, которые поступят в продажу в конце года, и бестселлеры брендов.',
+					btnhref:'/article/novost/'
 				},
 				{
 					id:2,
@@ -38,6 +39,7 @@ export default {
 					title:'Празднуем 30 лет бренда Nimue и дарим подарки',
 					imgSrc:'/images/4ce89d76-6e24-4064-a10e-c8e2d95977fe_resize_w400_h400.webp',
 					content:'Осень — идеальное время для заботы о коже! Пилинги Nimue— это smart-технологии, mix & match, и в каждой из них: Effective & Intelligent. Love your skin!',
+					btnhref:'/article/novost/'
 				},
 				{
 					id:3,
@@ -45,6 +47,7 @@ export default {
 					title:'Старт специальных предложений',
 					imgSrc:'/images/9c93b929-8a87-4bf2-8c03-845f19050a06_resize_w400_h400.webp',
 					content:'С сегодняшнего дня! ЮБИЛЕЙНОЕ предложение',
+					btnhref:'/article/novost/'
 				},
 				{
 					id:4,
@@ -52,6 +55,7 @@ export default {
 					title:'Новогодние Наборы Forlle’d и Nimue',
 					imgSrc:'/images/forlled-anons-bez-ceny_resize_w400_h400.webp',
 					content:'Эксклюзивные новинки юбилейного года, которые поступят в продажу в конце года, и бестселлеры брендов.',
+					btnhref:'/article/novost/'
 				},
 				{
 					id:5,
@@ -59,6 +63,7 @@ export default {
 					title:'Празднуем 30 лет бренда Nimue и дарим подарки',
 					imgSrc:'/images/4ce89d76-6e24-4064-a10e-c8e2d95977fe_resize_w400_h400.webp',
 					content:'Осень — идеальное время для заботы о коже! Пилинги Nimue— это smart-технологии, mix & match, и в каждой из них: Effective & Intelligent. Love your skin!',
+					btnhref:'/article/novost/'
 				},
 				{
 					id:6,
@@ -66,6 +71,7 @@ export default {
 					title:'Старт специальных предложений',
 					imgSrc:'/images/9c93b929-8a87-4bf2-8c03-845f19050a06_resize_w400_h400.webp',
 					content:'С сегодняшнего дня! ЮБИЛЕЙНОЕ предложение',
+					btnhref:'/article/novost/'
 				},
 													
 			]

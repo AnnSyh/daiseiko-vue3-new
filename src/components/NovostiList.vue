@@ -20,37 +20,27 @@
 									<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 cell-location-2-3"
 										>
 										<div v-for="item in items" :key="item.id">
-											<div class="card h-full flex flex-col theme-light text-center border-0 hover-none hover-transition hover-shadow p-0 non-plain"
-												 >
+											<div class="card h-full flex flex-col theme-light text-center border-0 hover-none hover-transition hover-shadow p-0 non-plain">
 												<div class="flex-1" > 
 													<div class="card-image px-4 mt-5" >
-														<div for="repeater"
-															class="image-wrap float-center bg-theme-none"
-															 >  
+														<div  class="image-wrap float-center bg-theme-none" >  
 															 <img :src="`${item.imgSrc}`" 
 																loading="eager"  class="max-w-[400px]"> 
-															
-															<div style="display:none;" ></div>
 														</div>
 													</div>
 													<div class="card-body clear-both" >
-														<div for="repeater"
-															class="text-secondary font-medium tracking-widest mb-1  block-text js_wysiwyg_d17_t1737399450040_r76"
-															>{{ item.data }}</div>
-														<div contenteditable="false"
-															class="min-width-10 min-height-10 fs-4 font-medium mb-3  block-text"
-															>
+														<div class="text-secondary font-medium tracking-widest mb-1  block-text ">
+															{{ item.data }}
+														</div>
+														<div class="min-width-10 min-height-10 fs-4 font-medium mb-3  block-text" >
 															{{ item.title }}
 														</div> 
-														<div for="repeater"
-															class="fs-5 text-secondary  block-text js_wysiwyg_d17_t1737399450041_r84"
-															>
+														<div class="fs-5 text-secondary  block-text ">
 															<p class="tt-p">{{ item.content }}</p>
 														</div>
-														<div for="repeater" class="block-button-wrap mt-5"
-															 >
+														<div  class="block-button-wrap mt-5">
 															 <a :href="`${item.btnhref}`" target="_self" class="relative btn  link"> 
-																<span contenteditable="false" class="text" >
+																<span  class="text" >
 																	Подробнее
 																</span> 
 															</a>
