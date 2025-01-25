@@ -11,6 +11,8 @@ import NovostView from '@/views/NovostView.vue'
 import AkademiyaDaiseiko from '@/views/AkademiyaDaiseiko.vue'
 import UsloviyaObucheniya from '@/views/UsloviyaObucheniya.vue'
 import Procedury from '@/views/Procedury.vue'
+import Procedura from '@/views/ProceduraView.vue'
+
 
 
 const routes = [
@@ -25,7 +27,8 @@ const routes = [
 	{ path: '/article/novost/', component: NovostView},
 	{ path: '/akademiya-daiseiko', component: AkademiyaDaiseiko},
 	{ path: '/akademiya-daiseiko/usloviya-obucheniya', component: UsloviyaObucheniya},
-	{ path: '/procedury', component: Procedury}
+	{ path: '/procedury', component: Procedury},
+	{ path: '/procedury/procedura', component: Procedura}
   ];
   
   const router = createRouter({

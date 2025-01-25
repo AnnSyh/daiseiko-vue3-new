@@ -28,6 +28,11 @@ export default {
 		activeItem: 'Профессиональная линия', 
 		};
 	},	
+	methods: {
+		handleItemSelected(item) {
+			this.activeItem = item.name;
+		},
+	},	
 	setup() {
 		const isFilterOpen = ref(false);
 

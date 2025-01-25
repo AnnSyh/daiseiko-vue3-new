@@ -8,7 +8,7 @@
 				<div class="panel_header mb-8 text-center">
 					<div class="container">
 						<div class="mb-4 fs-2 font-medium  block-text ">
-							<h2 class="tt-h">Расписание семинаров и мастерклассов</h2>
+							<h2 class="tt-h">{{title}}</h2>
 						</div>
 					</div>
 				</div>
@@ -23,7 +23,7 @@
 									class="text-gray-500 cursor-pointer hover:text-gray-700 px-3 py-2 font-medium text-sm rounded-md"><span>Список</span></a>
 							</nav>
 							<div id="calendarTabsContent" class="tab-content">
-								<div style="display:;">
+								<div>
 									<div>
 										<div class="calendar-views">
 											<div id="pills-tabContent" class="tab-content">
@@ -664,7 +664,12 @@
 
 export default {
 	name: 'Calendar',
-	props: {},
+	props: {
+		title: {
+			type: String,
+			// required: true,
+		},
+	},
 	methods: {},
 	components: {},
 };

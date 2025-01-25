@@ -1,36 +1,17 @@
 <template>
 	<nav class="mb-4">
 		<ol class="flex flex-wrap items-center gap-2">
-			<li>
+			<li v-for="item in menuItems" :key="item.name">
 				<div class="flex items-center text-sm border-r">
 					<div class="block-button-wrap">
-						<a href="/" target="_self" class="relative font-medium mr-2 text-secondary hover:!text-current "> 
+						<router-link :to="item.link" @click.native="selectItem(item)" target="_self" 
+							class="relative font-medium mr-2"
+							:class="`${textColor} ${textHoverColor}`"
+						> 
 							<span  class="text">
-								Главная
+								{{ item.name }}
 							</span> 
-						</a>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="flex items-center text-sm border-r">
-					<div class="block-button-wrap">
-						<a href="#" target="_self" class="relative font-medium mr-2 text-secondary hover:!text-current "> 
-							<span  class="text">
-								Профессиональная линия
-							</span> 
-						</a>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="flex items-center text-sm">
-					<div class="block-button-wrap">
-						<a target="_blank" class="relative font-medium text-secondary hover:!text-current "> 
-							<span  class="text">
-								Очищение
-							</span> 
-						</a>
+						</router-link>
 					</div>
 				</div>
 			</li>
@@ -43,7 +24,24 @@
 
 export default {
 	name: 'BreadCrumbs',
-	props: {},
+	props: {
+		menuItems: {
+			type: Array,
+			required: true,
+		},
+		activeItem: {
+			type: String,
+			required: true,
+		},
+		textColor:'',
+		textHoverColor:'',
+
+	},
+	methods: {
+    selectItem(item) {
+      this.$emit('itemSelected', item); // Извлекаем выбранный пункт меню
+    },
+  },
 	methods: {},
 	components: {},
 };

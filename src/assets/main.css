@@ -14054,3 +14054,12 @@ a.full-disabled {
     padding: 3.25rem .5rem 1rem;
     position: relative;
 }
+
+.panel-theme-white:not(.back-area) {
+    border-color: #d1d5db;
+    color: #111827;
+}
+
+.panel .theme-white, .panel-theme-white {
+    background-color: #fff;
+}

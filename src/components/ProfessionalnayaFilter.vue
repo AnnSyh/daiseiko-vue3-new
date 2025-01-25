@@ -1,7 +1,7 @@
 <template>
 	<div id="block-46" class="block panel panel-theme-light faq-three-columns-description relative ">
 			<div class="panel_background-image absolute inset-0 z-0 bg-no-repeat bg-center bg-cover bg-fixed"
-				style="background-image:url('/images/depositphotos-6120148-xl.jpg');">
+				style="background-image:url('../../public/images/depositphotos-6120148-xl.jpg');">
 			</div>
 			<div class="panel_mask gradient-white"
 				style="background:linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);opacity:0.9;">
@@ -319,9 +319,7 @@
 								<div v-for="n in 8" :key="n"
 									class="relative flex flex-col h-full shadow-md hover-shadow theme-white border non-plain">
 									<div>
-										<div for="repeater" class="w-full px-4 pt-4 image-wrap animation-none">
-											<!-- :src="`${staticPath}/intro-2.webp`" -->
-											<!-- <img src="/images/forlled-hyalogy-p-effect-clearance-cleansing-200g.jpg" -->
+										<div class="w-full px-4 pt-4 image-wrap animation-none">
 											<img src="/images/forlled-hyalogy-p-effect-clearance-cleansing-200g.jpg"
 												loading="lazy" class="!max-w-[200px]">
 										</div>
@@ -337,7 +335,7 @@
 												P-effect clearance cleansing
 											</p>
 										</div>
-										<div for="repeater" class="fs-6  block-text js_wysiwyg_d46_t1736926986349_r78">
+										<div class="fs-6  block-text js_wysiwyg_d46_t1736926986349_r78">
 											<p class="tt-p">Очищающее средство первой ступени, разработанное
 												специально
 												для кожи, подверженной стрессам и загрязнениям современной городской
@@ -360,7 +358,7 @@
 												</span> </div>
 										</div>
 										<div class="inline-flex pb-1">
-											<div for="repeater" class="block-button-wrap"><a
+											<div class="block-button-wrap"><a
 													href="/professionalnaya-liniya/product"
 													target="_self" class="stretched-link btn btn-primary "> <span
 														contenteditable="false" class="text">

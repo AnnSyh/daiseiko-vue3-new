@@ -35,7 +35,7 @@
 							</div>
 						</div>
 						<div class="mt-4 space-y-6">
-							<div class="fs-5  block-text js_wysiwyg_d28_t1737284059681_r73">Очищающее
+							<div class="fs-5  block-text">Очищающее
 								средство первой ступени, разработанное
 								специально для кожи, подверженной стрессам и загрязнениям современной
 								городской жизни. Оно очень эффективен для растворения жирных
@@ -76,7 +76,7 @@
 														Тип продукта
 													</p>
 													<div for="repeater"
-														class="text-secondary  block-text js_wysiwyg_d28_t1737284059684_r41">
+														class="text-secondary  block-text">
 														очищение</div>
 												</div>
 											</div>
@@ -89,7 +89,7 @@
 														Серия
 													</p>
 													<div for="repeater"
-														class="text-secondary  block-text js_wysiwyg_d28_t1737284059685_r82">
+														class="text-secondary  block-text">
 														P-effect</div>
 												</div>
 											</div>
@@ -102,7 +102,7 @@
 														Для кого подходит
 													</p>
 													<div for="repeater"
-														class="text-secondary  block-text js_wysiwyg_d28_t1737284059685_r97">
+														class="text-secondary  block-text">
 														для мужчин и для женщин</div>
 												</div>
 											</div>
@@ -115,7 +115,7 @@
 														Возраст
 													</p>
 													<div for="repeater"
-														class="text-secondary  block-text js_wysiwyg_d28_t1737284059685_r85">
+														class="text-secondary  block-text">
 														для любого возраста</div>
 												</div>
 											</div>
@@ -128,7 +128,7 @@
 														Кожа
 													</p>
 													<div for="repeater"
-														class="text-secondary  block-text js_wysiwyg_d28_t1737284059686_r72">
+														class="text-secondary  block-text">
 														для всех типов кожи</div>
 												</div>
 											</div>
@@ -141,7 +141,7 @@
 														Область
 													</p>
 													<div for="repeater"
-														class="text-secondary  block-text js_wysiwyg_d28_t1737284059687_r28">
+														class="text-secondary  block-text">
 														уход за лицом</div>
 												</div>
 											</div>

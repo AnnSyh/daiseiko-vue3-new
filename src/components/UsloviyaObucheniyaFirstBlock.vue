@@ -32,7 +32,9 @@
 								<div class="w-full mt-8 lg:mt-0 lg:w-1/2">
 									<div class="relative w-full h-auto">
 										<div class="video-wrap rounded-lg">
-											<div class="relative m-0 max-w-full rounded-lg hidden lg:block">
+											<div class="relative m-0 max-w-full rounded-lg hidden lg:block"
+												style="margin: auto; overflow: hidden; width: 100%; height: 360px;"
+											>
 												<div class="fwdevp">
 													<div class="video-screen-holder">
 														<!-- <video playsinline="" webkit-playsinline=""

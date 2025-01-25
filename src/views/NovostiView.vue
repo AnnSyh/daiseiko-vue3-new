@@ -26,7 +26,7 @@
 			</div>  
 		</div>
 
-		<h1 class="text-center my-16">Календарь .....</h1>
+		<Calendar :title="title"/>
 
 	</div>
 </template>
@@ -34,6 +34,7 @@
 <script>
 import { ref } from 'vue';
 import TopMenu from '@/components/TopMenu.vue'
+import Calendar from '@/components/Calendar.vue'
 
 
 
@@ -46,6 +47,7 @@ export default {
 			{ name: 'Обучение', link: '/novosti/events/' },
 		],
 		activeItem: 'Обучение', 
+		title:'Календарь',
 		};
 	},
 	methods: {
@@ -69,6 +71,7 @@ export default {
 	computed: {},
 	components: {
 		TopMenu,
+		Calendar,
 	},
 }
 </script>

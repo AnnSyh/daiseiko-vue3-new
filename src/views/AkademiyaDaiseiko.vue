@@ -4,7 +4,7 @@
 		<ADFirstBlock />
 		<AkademiyaDaiseikoTypesOfTraiding />
 		<AkademiyaDaiseikoTeachers />
-		<Calendar />
+		<Calendar :title="title"/>
 		<ADSpecialConditions />
 
 		<!-- Обратная связь c формой справа -->
@@ -35,6 +35,7 @@ export default {
 				{ name: 'Процедуры', link: '/procedury' },
 			],
 			activeItem: 'Академия Дайсэйко',
+			title:'Расписание семинаров и мастерклассов',
 			dataArrayNews: [
 				{
 					id: 1,

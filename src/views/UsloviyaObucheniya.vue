@@ -15,7 +15,6 @@
 </template>
 
 <script>
-import { ref } from 'vue';
 import TopMenu from '@/components/TopMenu.vue'
 import UsloviyaObucheniyaFirstBlock from '@/components/UsloviyaObucheniyaFirstBlock.vue'
 import UsloviyaObucheniyaContent from '@/components/UsloviyaObucheniyaContent.vue'
