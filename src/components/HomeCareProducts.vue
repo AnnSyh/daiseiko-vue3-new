@@ -18,7 +18,7 @@
 						<div>
 							<div
 								class="grid grid-cols-1 gap-y-4 sm:grid-cols-1 sm:gap-x-6 sm:gap-y-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-6 xl:grid-cols-4">
-								<div v-for="item in cards" :key="cards.id"
+								<div v-for="item in items" :key="items.id"
 									class="relative flex flex-col h-full shadow-md hover-shadow theme-white border non-plain">
 									<div>
 										<div class="w-full px-4 pt-4 image-wrap">
@@ -114,50 +114,14 @@
 export default {
 	name: 'HomeCareProducts',
 	data() {
-		return {
-			cards: [
-				{
-					id: 1,
-					title: 'Лосьон для удаления макияжа',
-					subtitle: 'Remover for point make-up',
-					src: '/images/forlled-hyalogy-remover-for-point-make-up-2-1.webp',
-					description: 'Это очищающее средство разработано, в частности, для быстрого снятия макияжа, в том числе водостойкого, с кожи вокруг глаз и губ.',
-					articul: '421257',
-					ml: '150',
-				},
-				{
-					id: 2,
-					title: 'Лосьон для удаления макияжа',
-					subtitle: 'Remover for point make-up',
-					src: '/images/forlled-hyalogy-remover-for-point-make-up-2-1.webp',
-					description: 'Это очищающее средство разработано, в частности, для быстрого снятия макияжа, в том числе водостойкого, с кожи вокруг глаз и губ.',
-					articul: '421257',
-					ml: '150',
-				},
-				{
-					id: 3,
-					title: 'Лосьон для удаления макияжа',
-					subtitle: 'Remover for point make-up',
-					src: '/images/forlled-hyalogy-remover-for-point-make-up-2-1.webp',
-					description: 'Это очищающее средство разработано, в частности, для быстрого снятия макияжа, в том числе водостойкого, с кожи вокруг глаз и губ.',
-					articul: '421257',
-					ml: '150',
-				},
-				{
-					id: 4,
-					title: 'Лосьон для удаления макияжа',
-					subtitle: 'Remover for point make-up',
-					src: '/images/forlled-hyalogy-remover-for-point-make-up-2-1.webp',
-					description: 'Это очищающее средство разработано, в частности, для быстрого снятия макияжа, в том числе водостойкого, с кожи вокруг глаз и губ.',
-					articul: '421257',
-					ml: '150',
-				},
-
-
-			],
-		};
+		return {};
 	},
-	props: {},
+	props: {
+		items: {
+			type: Array,
+			required: true,
+		},
+	},
 	methods: {},
 	components: {},
 };

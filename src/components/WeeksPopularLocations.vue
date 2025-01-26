@@ -25,7 +25,7 @@
 								<div class="cards-holder-non-grid">
 									<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 cell-location-2-3">
 
-										<div v-for="item in cards" :key="cards.id" data-aos="slide-up"
+										<div v-for="item in items" :key="item.id" data-aos="slide-up"
 											class="repeater-list-item aos-init aos-animate">
 											<div
 												class="card h-full flex flex-col theme-white border border-0 hover-shadow hover-transition plain-wide !border-0">
@@ -110,41 +110,18 @@
 </template>
 
 <script>
-// import PrimeButton from '@/views/ui/buttons/PrimeButton.vue';
 
 export default {
 	name: 'WeeksPopularLocations',
 	data() {
-		return {
-			cards: [
-				{
-					id: 1,
-					title: 'Health & Else',
-					src: '/images/dsc-2841-1.webp',
-					description: 'Все необходимое для жительницы мегаполиса – в одном месте: бьюти-услуги, косметология, спа, фитнес и ателье.',
-					address: 'Леонтьевский пер., 2АС1',
-					metro: 'м. Тверская',
-				},
-				{
-					id: 2,
-					title: 'Мечты Виктории',
-					src: '/images/21-b.webp',
-					description: 'С самого первого дня «Мечты Виктории» — это редкое место, где и взрослые, и дети чувствуют себя одинаково желанными гостями, потому что в нашей концепции заложена совершенная формула: пока родители ухаживают за собой, дети весело проводят время в специально оборудованной детской комнате под присмотром заботливой няни',
-					address: 'ул. Гиляровского д.44',
-					metro: 'м. Проспект мира',
-				},
-				{
-					id: 3,
-					title: 'Курорт красоты Biarritz',
-					src: '/images/85ab291f.webp',
-					description: 'Открывая двери курорта красоты «Biarritz» в Волгограде, вы сможете забыть о проблемах и получить уход самого высокого профессионального уровня.',
-					address: 'ул. Мира, д.12',
-				},
-
-			],
-		};
+		return {};
 	},
-	props: {},
+	props: {
+		items: {
+			type: Array,
+			required: true,
+		},
+	},
 	methods: {},
 	components: {},
 };

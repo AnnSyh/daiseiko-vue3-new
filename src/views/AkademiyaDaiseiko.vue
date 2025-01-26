@@ -2,8 +2,8 @@
 	<div>
 		<TopMenu :menuItems="menuItems" :activeItem="activeItem" @itemSelected="handleItemSelected" />
 		<ADFirstBlock />
-		<AkademiyaDaiseikoTypesOfTraiding />
-		<AkademiyaDaiseikoTeachers />
+		<AkademiyaDaiseikoTypesOfTraiding :items="cardStore.ADTypesOfTraiding" />
+		<AkademiyaDaiseikoTeachers :items="cardStore.ADTeachers" />
 		<Calendar :title="title"/>
 		<ADSpecialConditions />
 
@@ -23,6 +23,8 @@ import AkademiyaDaiseikoTeachers from '@/components/ADTeachers.vue'
 import Calendar from '@/components/Calendar.vue'
 import NimueFeedback from '@/components/NimueFeedback.vue'
 import ADSpecialConditions from '@/components/ADSpecialConditions.vue'
+
+import { useCardStore } from '@/store/store.js';
 
 
 export default {
@@ -103,6 +105,7 @@ export default {
 	},
 	setup() {
 		const isFilterOpen = ref(false);
+		const cardStore = useCardStore();
 
 		const toggleFilter = () => {
 			isFilterOpen.value = !isFilterOpen.value;
@@ -112,6 +115,7 @@ export default {
 		return {
 			isFilterOpen,
 			toggleFilter,
+			cardStore
 		};
 	},
 	components: {

@@ -6,7 +6,7 @@
 			@itemSelected="handleItemSelected"
 		/>
 		<ProfessionalnayaAbout/>
-		<ProfessionalnayaFilter/>
+		<ProfessionalnayaFilter :items="cardStore.professionalnayaCards"/>
 	</div>
 </template>
 
@@ -17,15 +17,17 @@ import TopMenu from '@/components/TopMenu.vue';
 import ProfessionalnayaAbout from '@/components/ProfessionalnayaAbout.vue';
 import ProfessionalnayaFilter from '@/components/ProfessionalnayaFilter.vue';
 
+import { useCardStore } from '@/store/store.js';
+
 export default {
 	name:'ProfessionalnayaLiniya',
 	data() {
 		return {
-		menuItems: [
-			{ name: 'Профессиональная линия', link: '/professionalnayaLiniya' },
-			{ name: 'Домашний уход', link: '/domashnijUhod' },
-		],
-		activeItem: 'Профессиональная линия', 
+			menuItems: [
+				{ name: 'Профессиональная линия', link: '/professionalnayaLiniya' },
+				{ name: 'Домашний уход', link: '/domashnijUhod' },
+			],
+			activeItem: 'Профессиональная линия', 
 		};
 	},	
 	methods: {
@@ -35,15 +37,16 @@ export default {
 	},	
 	setup() {
 		const isFilterOpen = ref(false);
+		const cardStore = useCardStore();
 
 		const toggleFilter = () => {
 			isFilterOpen.value = !isFilterOpen.value;
 		};
 
-
 		return {
 			isFilterOpen,
 			toggleFilter,
+			cardStore
 		};
 	},
 	components: { 

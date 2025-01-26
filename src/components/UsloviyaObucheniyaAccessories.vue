@@ -30,102 +30,19 @@
 								<div class="max-w-2xl mx-auto lg:max-w-none" >
 									<div class="mt-16 space-y-16 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8"
 										>
-										<div class="repeater-list-item">
+										<div v-for="item in items" :key="item.id">
 											<blockquote class="mb-6 sm:flex lg:block">
-												<div for="repeater" class="w-10 icon-wrap decoration-cover theme-image"
-													>  
-													<div class="ic ic-treatment"></div>
-													<div style="display:none;"></div>
+												<div class="w-10 icon-wrap decoration-cover theme-image">  
+													<div :class="`${item.icon}`"></div>
 												</div>
 												<div class="mt-2 sm:mt-0 lg:mt-4 sm:ml-6 lg:ml-0">
-													<div for="repeater"
-														class="description block-text"
-														>
-														<ul class="tt-ul">
-															<li>
-																<p class="tt-p">Хлопковые полотенца для лица и рук</p>
-															</li>
-															<li>
-																<p class="tt-p">Плед</p>
-															</li>
-															<li>
-																<p class="tt-p">Рукавички для умывания</p>
-															</li>
-															<li>
-																<p class="tt-p">Бланк назначений</p>
-															</li>
-														</ul>
-													</div>
-													<div for="repeater"
-														class="mt-4 block font-medium not-italic text-current block-text "
-														>
-														<p class="tt-p">незаменимы для процедуры&nbsp; &nbsp;</p>
+													<div v-html="item.content"></div>
+													<div class="mt-4 block font-medium not-italic text-current block-text ">
+														<p class="tt-p">{{ item.text }}</p>
 													</div>
 												</div>
 											</blockquote>
 										</div>
-										<div class="repeater-list-item">
-											<blockquote class="mb-6 sm:flex lg:block">
-												<div for="repeater" class="w-10 icon-wrap decoration-cover theme-image"
-													>  
-													<div class="ic ic-feather"></div>
-													<div style="display:none;"></div>
-												</div>
-												<div class="mt-2 sm:mt-0 lg:mt-4 sm:ml-6 lg:ml-0">
-													<div for="repeater"
-														class="description block-text "
-														>
-														<ul class="tt-ul">
-															<li>
-																<p class="tt-p">Хлопковая повязка на голову</p>
-															</li>
-															<li>
-																<p class="tt-p">Плед</p>
-															</li>
-															<li>
-																<p class="tt-p">Сумка-шоппер</p>
-															</li>
-															<li>
-																<p class="tt-p">Гуаша</p>
-															</li>
-														</ul>
-													</div>
-													<div for="repeater"
-														class="mt-4 block font-medium not-italic text-current block-text "
-														>порадовать себя</div>
-												</div>
-											</blockquote>
-										</div>
-										<div class="repeater-list-item">
-											<blockquote class="mb-6 sm:flex lg:block">
-												<div for="repeater" class="w-10 icon-wrap decoration-cover theme-image"
-													>  
-													<div class="ic ic-candle"></div>
-													<div style="display:none;"></div>
-												</div>
-												<div class="mt-2 sm:mt-0 lg:mt-4 sm:ml-6 lg:ml-0">
-													<div for="repeater"
-														class="description block-text"
-														>
-														<ul class="tt-ul">
-															<li>
-																<p class="tt-p">Складное зеркало с подсветкой</p>
-															</li>
-															<li>
-																<p class="tt-p">Кисти</p>
-															</li>
-															<li>
-																<p class="tt-p">Пиала для аксессуаров и смешивания
-																	коктейлей-сывороток</p>
-															</li>
-														</ul>
-													</div>
-													<div for="repeater"
-														class="mt-4 block font-medium not-italic text-current block-text"
-														>многократное использование</div>
-												</div>
-											</blockquote>
-										</div>  
 									</div>
 								</div>
 							</div> 
@@ -143,7 +60,12 @@
 
 export default {
 	name: 'UsloviyaObucheniyaAccessories',
-	props: {},
+	props: {
+		items: {
+			type: Array,
+			required: true,
+		},
+	},
 	methods: {},
 	components: {},
 };

@@ -10,89 +10,21 @@
 							<div class="inner-wrap">
 								<div class="max-w-2xl mx-auto lg:max-w-none">
 									<div class="mt-16 space-y-16 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
-										<div data-aos="slide-up" class="repeater-list-item aos-init aos-animate">
+										<div  v-for="item in items" :key="item.name" data-aos="slide-up" class="repeater-list-item aos-init aos-animate">
 											<blockquote class="mb-6 sm:flex lg:block">
 												<div for="repeater"
 													class="w-10 icon-wrap decoration-cover theme-image border-0">
-													<div class="ic ic-icon-2865757"></div>
-													<div style="display:none;"></div>
+													<div :class="`${item.icon}`"></div>
 												</div>
 												<div class="mt-2 sm:mt-0 lg:mt-4 sm:ml-6 lg:ml-0">
 													<div for="repeater" class="description block-text ">
-														<h4 class="tt-h"><strong>Формы обучения для
-																профессионалов:</strong></h4>
-														<ul class="tt-ul">
-															<li>
-																<p class="tt-p">очная (на территории Академии)</p>
-															</li>
-															<li>
-																<p class="tt-p">выездная (на территории партнера: салон,
-																	клиника, спа)</p>
-															</li>
-															<li>
-																<p class="tt-p">дистанционная (вебинары)</p>
-															</li>
-														</ul>
+														<h4 class="tt-h"><strong>{{ item.name }}</strong></h4>
+														<div v-html="item.content"></div>
 													</div>
 												</div>
 											</blockquote>
 										</div>
-										<div data-aos="slide-up" class="repeater-list-item aos-init aos-animate">
-											<blockquote class="mb-6 sm:flex lg:block">
-												<div for="repeater" class="w-10 icon-wrap decoration-cover theme-image">
-													<div class="ic ic-uniE969"></div>
-													<div style="display:none;"></div>
-												</div>
-												<div class="mt-2 sm:mt-0 lg:mt-4 sm:ml-6 lg:ml-0">
-													<div for="repeater" class="description block-text ">
-														<h4 class="tt-h"><strong>Виды обучения в Академии
-																Дайсэйко:</strong></h4>
-														<ul class="tt-ul">
-															<li>
-																<p class="tt-p">базовый курс</p>
-															</li>
-															<li>
-																<p class="tt-p">повышение квалификации</p>
-															</li>
-															<li>
-																<p class="tt-p">тематические семинары</p>
-															</li>
-															<li>
-																<p class="tt-p">public talk</p>
-															</li>
-															<li>
-																<p class="tt-p">вебинары</p>
-															</li>
-															<li>
-																<p class="tt-p">частные консультации</p>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</blockquote>
-										</div>
-										<div data-aos="slide-up" class="repeater-list-item aos-init aos-animate">
-											<blockquote class="mb-6 sm:flex lg:block">
-												<div for="repeater" class="w-10 icon-wrap decoration-cover theme-image">
-													<div class="ic ic-bioengineering-1"></div>
-													<div style="display:none;"></div>
-												</div>
-												<div class="mt-2 sm:mt-0 lg:mt-4 sm:ml-6 lg:ml-0">
-													<div for="repeater" class="description block-text ">
-														<h4 class="tt-h"><strong>Категории обучающихся:</strong></h4>
-														<ul class="tt-ul">
-															<li>
-																<p class="tt-p">косметологи (врачи и эстетисты, в том
-																	числе частные косметологи)</p>
-															</li>
-															<li>
-																<p class="tt-p">администраторы&nbsp;</p>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</blockquote>
-										</div>
+								
 									</div>
 								</div>
 							</div>
@@ -108,11 +40,16 @@
 // import Calendar from '@/components/Calendar.vue'
 
 export default {
-	name: 'AkademiyaDaiseikoTypesOfTraiding',
+	name: 'ADTypesOfTraiding',
 	data() {
 		return {}
 	},
-	props: {},
+	props: {
+		items: {
+			type: Array,
+			required: true,
+		},
+	},
 	methods: {},
 	components: {},
 };

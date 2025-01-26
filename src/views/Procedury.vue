@@ -4,7 +4,7 @@
 
 		<ProceduryAbout />
 		
-		<ProceduryFilter :items="cardsDaiseko"/>
+		<ProceduryFilter :items="cardStore.ProceduryDaiseko"/>
 
 	</div>
 </template>
@@ -15,6 +15,8 @@ import TopMenu from '@/components/TopMenu.vue'
 import ProceduryAbout from '@/components/ProceduryAbout.vue'
 import UsloviyaObucheniyaFirstBlock from '@/components/UsloviyaObucheniyaFirstBlock.vue'
 import ProceduryFilter from '@/components/ProceduryFilter.vue'
+
+import { useCardStore } from '@/store/store.js';
 
 
 
@@ -79,36 +81,36 @@ export default {
 				},
 
 			],
-			cardsDaiseko:[
-				{
-					id: 1,
-					title: 'Гидродепонирование и послойное восстановление кожи',
-					src: '/images/stop-9_resize_w800_h.webp',
-					description: 'Программа, основанная на высокотехнологичной профессиональной косметике Forlle’d, обеспечивает естественную регенерацию кожи, создавая и поддерживая ее здоровье.',
-					btnName:'Подробнее о процедуре',
-				},
-				{
-					id: 2,
-					title: 'Лифтинг-программа объемного 3D-моделирования',
-					src: '/images/stop-38.webp',
-					description: 'Комплексное воздействие на признаки старения кожи. Процедура применяется в борьбе с признаками птоза.',
-					btnName:'Подробнее о процедуре',
-				},
-				{
-					id: 3,
-					title: 'Антиоксидантная защита на основе микронизированной платины',
-					src: '/images/stop-15.webp',
-					description: 'Рекомендуется для устранения негативного воздействия инсоляции, курения,  употребления алкоголя, длительного приема медикаментов, сильных эмоциональных  стрессов, диет, длительного проживания в регионах с загрязненной окружающей средой. ',
-					btnName:'Подробнее о процедуре',
-				},
-				{
-					id: 4,
-					title: 'Кислородная терапия и активация тканевого дыхания',
-					src: '/images/stop-15.webp',
-					description: 'Косметическая процедура направлена на существенное омоложение кожи лица, устранение и коррекцию морщин.',
-					btnName:'Подробнее о процедуре',
-				},
-			],
+			// cardsDaiseko:[
+			// 	{
+			// 		id: 1,
+			// 		title: 'Гидродепонирование и послойное восстановление кожи',
+			// 		src: '/images/stop-9_resize_w800_h.webp',
+			// 		description: 'Программа, основанная на высокотехнологичной профессиональной косметике Forlle’d, обеспечивает естественную регенерацию кожи, создавая и поддерживая ее здоровье.',
+			// 		btnName:'Подробнее о процедуре',
+			// 	},
+			// 	{
+			// 		id: 2,
+			// 		title: 'Лифтинг-программа объемного 3D-моделирования',
+			// 		src: '/images/stop-38.webp',
+			// 		description: 'Комплексное воздействие на признаки старения кожи. Процедура применяется в борьбе с признаками птоза.',
+			// 		btnName:'Подробнее о процедуре',
+			// 	},
+			// 	{
+			// 		id: 3,
+			// 		title: 'Антиоксидантная защита на основе микронизированной платины',
+			// 		src: '/images/stop-15.webp',
+			// 		description: 'Рекомендуется для устранения негативного воздействия инсоляции, курения,  употребления алкоголя, длительного приема медикаментов, сильных эмоциональных  стрессов, диет, длительного проживания в регионах с загрязненной окружающей средой. ',
+			// 		btnName:'Подробнее о процедуре',
+			// 	},
+			// 	{
+			// 		id: 4,
+			// 		title: 'Кислородная терапия и активация тканевого дыхания',
+			// 		src: '/images/stop-15.webp',
+			// 		description: 'Косметическая процедура направлена на существенное омоложение кожи лица, устранение и коррекцию морщин.',
+			// 		btnName:'Подробнее о процедуре',
+			// 	},
+			// ],
 
 		};
 	},
@@ -119,6 +121,7 @@ export default {
 	},
 	setup() {
 		const isFilterOpen = ref(false);
+		const cardStore = useCardStore();
 
 		const toggleFilter = () => {
 			isFilterOpen.value = !isFilterOpen.value;
@@ -128,6 +131,7 @@ export default {
 		return {
 			isFilterOpen,
 			toggleFilter,
+			cardStore,
 		};
 	},
 	components: {

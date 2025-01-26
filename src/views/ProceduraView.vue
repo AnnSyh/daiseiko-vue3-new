@@ -37,6 +37,7 @@ import ProceduraWhatTheySay from '@/components/ProceduraWhatTheySay.vue';
 import ProceduraRecommendedHomeCare from '@/components/ProceduraRecommendedHomeCare.vue';
 
 
+
 export default {
 	name: 'ProceduraView',
 	data() {
@@ -142,4 +143,3 @@ export default {
 	},
 }
 </script>
-

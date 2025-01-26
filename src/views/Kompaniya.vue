@@ -1,18 +1,14 @@
 <template>
 	<div class="about">
 		<!-- <h1>Kompaniya page</h1> -->
-		<TopMenu
-			:menuItems="menuItems" 
-			:activeItem="activeItem" 
-			@itemSelected="handleItemSelected"
-		/>
-		<KompaniyaBrend1/>
-		<KompaniyaNews :items="cardsNews"/>
-		<DaiseikoAcademy :items="cardsDaiseko"/>
-		<LineSalonsClinics/>
-		<HomeCareProducts/>
-		<WeeksPopularLocations/>
-		<FeedbackWithMap/>
+		<TopMenu :menuItems="menuItems" :activeItem="activeItem" @itemSelected="handleItemSelected" />
+		<KompaniyaBrend1 />
+		<KompaniyaNews :items="cardStore.kompaniyaNewsCards" />
+		<DaiseikoAcademy :items="cardStore.kompaniyaDaisekoCards" />
+		<LineSalonsClinics />
+		<HomeCareProducts :items="cardStore.homeCareProducts" />
+		<WeeksPopularLocations :items="cardStore.kompaniyaWeeksPopularLocations" />
+		<FeedbackWithMap />
 	</div>
 </template>
 
@@ -28,70 +24,27 @@ import HomeCareProducts from '@/components/HomeCareProducts.vue'
 import WeeksPopularLocations from '@/components/WeeksPopularLocations.vue'
 import FeedbackWithMap from '@/components/FeedbackWithMap.vue'
 
+import { useCardStore } from '@/store/store.js';
+
 export default {
-	name:'Kompaniya',
+	name: 'Kompaniya',
 	data() {
 		return {
-		menuItems: [
-			{ name: 'Forlle’d', link: '/kompaniya' },
-			{ name: 'Nimue', link: '/kompaniya/nimue' },
-		],
-		activeItem: 'Forlle’d', 
-		cardsNews: [
-				{ 
-					id: 1, 
-					data:'14.11.2024',
-					title: 'Новогодние Наборы Forlle’d и Nimue', 
-					description: 'Эксклюзивные новинки юбилейного года, которые поступят в продажу в конце года, и бестселлеры брендов.',
-				},
-				{ 
-					id: 2, 
-					data:'25.09.2024',
-					title: 'Празднуем 30 лет бренда Nimue и дарим подарки', 
-					description: 'Осень — идеальное время для заботы о коже! Пилинги Nimue— это smart-технологии, mix & match, и в каждой из них: Effective & Intelligent. Love your skin!',
-				},
-				{ 
-					id: 3, 
-					data:'17.09.2024',
-					title: 'Старт специальных предложений', 
-					description: 'С сегодняшнего дня! ЮБИЛЕЙНОЕ предложение',
-				},
+			menuItems: [
+				{ name: 'Forlle’d', link: '/kompaniya' },
+				{ name: 'Nimue', link: '/kompaniya/nimue' },
 			],
-			cardsDaiseko:[
-				{
-					id: 1,
-					title: 'Процедуры',
-					src: '/images/stop-14.webp',
-					description: 'Салонные и клинические процедуры восстанавливают структуру кожи, стимулируют синтез коллагена и эластина, обеспечивают непревзойденную антиоксидантную защиту.',
-				},
-				{
-					id: 2,
-					title: 'Расписание Академии Дайсэйко',
-					src: '/images/stop-38.webp',
-					description: 'Обучение проводится на препаратах Forlle’d. Профессиональная линейка препаратов Forlle’d уникальная и единственная в мире, основанная на разработке, удостоенной Нобелевской Премии.',
-				},
-				{
-					id: 3,
-					title: 'Аксессуары косметолога',
-					src: '/images/stop-15.webp',
-					description: 'Брендированные аксессуары для комплектации и работы в кабинете косметолога и для домашнего применения.',
-				},
-				{
-					id: 4,
-					title: 'Аксессуары косметолога',
-					src: '/images/stop-15.webp',
-					description: 'Брендированные аксессуары для комплектации и работы в кабинете косметолога и для домашнего применения.',
-				},
-			],
+			activeItem: 'Forlle’d',
 		};
 	},
 	methods: {
 		handleItemSelected(item) {
-			this.activeItem = item.name; 
+			this.activeItem = item.name;
 		},
-	},	
+	},
 	setup() {
 		const isFilterOpen = ref(false);
+		const cardStore = useCardStore();
 
 		const toggleFilter = () => {
 			isFilterOpen.value = !isFilterOpen.value;
@@ -101,13 +54,14 @@ export default {
 		return {
 			isFilterOpen,
 			toggleFilter,
+			cardStore,
 		};
 	},
-	components: { 
-		KompaniyaBrend1, 
+	components: {
+		KompaniyaBrend1,
 		TopMenu,
-		KompaniyaNews, 
-		DaiseikoAcademy, 
+		KompaniyaNews,
+		DaiseikoAcademy,
 		LineSalonsClinics,
 		HomeCareProducts,
 		WeeksPopularLocations,

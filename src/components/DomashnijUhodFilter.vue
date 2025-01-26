@@ -313,28 +313,24 @@
 					<div class="container">
 						<div class="mx-auto max-w-full">
 							<div class="grid grid-cols-1 gap-y-4 sm:grid-cols-1 sm:gap-x-6 sm:gap-y-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-6 xl:grid-cols-4">
-								<div v-for="n in 8" :key="n" class="relative flex flex-col h-full shadow-md hover-shadow theme-white border non-plain">
+								<div v-for="item in items" :key="item.id"
+									class="relative flex flex-col h-full shadow-md hover-shadow theme-white border non-plain">
 									<div>
-										<div for="repeater" class="w-full px-4 pt-4 image-wrap animation-none">
-											<img src="/images/forlled-hyalogy-p-effect-clearance-cleansing-200g.jpg" loading="lazy" class="!max-w-[200px]">
+										<div  class="w-full px-4 pt-4 image-wrap animation-none">
+											<img :src="`${item.imgSrc}`" loading="lazy" class="!max-w-[200px]">
 										</div>
 									</div>
 									<div class="flex-1 p-4 space-y-3 flex flex-col">
 										<div>
 											<h2  class="min-width-10 min-height-10 fs-5 leading-6 font-bold  block-text">
-												Очищающая эмульсия
+												{{ item.title }}
 											</h2>
-											<p  class="min-width-10 min-height-10 fs-5 font-medium mt-1  block-text">
-												P-effect clearance cleansing
+											<p v-if="item.subtitle" class="min-width-10 min-height-10 fs-5 font-medium mt-1  block-text">
+												{{ item.subtitle }}
 											</p>
 										</div>
-										<div for="repeater" class="fs-6  block-text ">
-											<p class="tt-p">
-												Очищающее средство первой ступени, разработанное
-												специально
-												для кожи, подверженной стрессам и загрязнениям современной городской
-												жизни.
-											</p>
+										<div  class="fs-6  block-text ">
+											<p class="tt-p">{{item.text}}</p>
 										</div>
 										<div class="flex-1 flex flex-col justify-end">
 											<div class="text-sm italic">
@@ -342,12 +338,12 @@
 													Артикул:
 												</span> 
 												<span  class="min-width-10 min-height-10 fs-7 font-medium  block-text">
-													426092
+													{{item.articul}}
 												</span> 
 											</div>
 											<div>
 												<span  class="min-width-10 min-height-10 fs-7 font-medium  block-text">
-													200
+													{{item.gramm}}
 												</span> 
 												<span  class="min-width-10 min-height-10 fs-7 font-medium  block-text">
 													g
@@ -355,10 +351,10 @@
 											</div>
 										</div>
 										<div class="inline-flex pb-1">
-											<div for="repeater" class="block-button-wrap">
-												<a href="/professionalnaya-liniya/product" target="_self" class="stretched-link btn btn-primary "> 
+											<div  class="block-button-wrap">
+												<a :href="`${item.btnHref}`" target="_self" class="stretched-link btn btn-primary "> 
 													<span  class="text">
-														Подробнее
+														{{ item.btnName }}
 													</span> 
 												</a>
 											</div>
@@ -401,7 +397,12 @@ export default {
 			toggleFilter,
 		};
 	},
-	props: {},
+	props: {
+		items: {
+			type: Array,
+			required: true,
+		},
+	},
 	methods: {},
 	components: {},
 };

@@ -10403,6 +10403,11 @@ body:not(.edit-modal-mode) .repeater-list-item.edit-mode:hover .list-item-contro
 	content: "\e96d"
 }
 
+
+.ic-bioengineering-1:before {
+    content: "\e965";
+}
+
 .ic-monitor:before {
 	content: "\e96e"
 }

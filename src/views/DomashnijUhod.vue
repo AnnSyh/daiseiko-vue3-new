@@ -6,7 +6,7 @@
 			@itemSelected="handleItemSelected"
 		/>
 		<DomashnijUhodAbout/>
-		<DomashnijUhodFilter/>
+		<DomashnijUhodFilter :items="cardStore.professionalnayaCards"/>
 	</div>
 </template>
 
@@ -15,6 +15,8 @@
 import DomashnijUhodAbout from '@/components/DomashnijUhodAbout.vue';
 import DomashnijUhodFilter from '@/components/DomashnijUhodFilter.vue';
 import TopMenu from '@/components/TopMenu.vue';
+
+import { useCardStore } from '@/store/store.js';
 
 export default {
 	name:'DomashnijUhod',
@@ -27,7 +29,13 @@ export default {
 		activeItem: 'Домашний уход', 
 		};
 	},
-	
+	setup() {
+		const cardStore = useCardStore();
+
+		return {
+			cardStore
+		};
+	},
 	components: { 
 		DomashnijUhodAbout,
 		DomashnijUhodFilter,

@@ -1,6 +1,5 @@
 <template>
 	<div class="block panel panel-theme-light he-04">
-		<!-- <div class="panel_background-image absolute inset-0 z-0 bg-no-repeat bg-center bg-auto"></div> -->
 
 		<div class="relative pt-0 pb-0">
 				<div class="block-overflow-x-auto block-overflow-y w-full">
@@ -11,7 +10,7 @@
 									<div class="inline-flex justify-start Item">
 										<template v-for="item in menuItems" :key="item.name">
 												<router-link 	:to="item.link" 
-																@click.native="selectItem(item)"
+																@click="selectItem(item)"
 																class="btn menu-btn"
 												>
 													<span class="text">
