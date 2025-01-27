@@ -5,7 +5,7 @@
 		<KompaniyaBrend1 />
 		<KompaniyaNews :items="cardStore.kompaniyaNewsCards" />
 		<DaiseikoAcademy :items="cardStore.kompaniyaDaisekoCards" />
-		<LineSalonsClinics />
+		<LineSalonsClinics :items="cardStore.Kompaniya" :class="bgPanelClass"/>
 		<HomeCareProducts :items="cardStore.homeCareProducts" />
 		<WeeksPopularLocations :items="cardStore.kompaniyaWeeksPopularLocations" />
 		<FeedbackWithMap />

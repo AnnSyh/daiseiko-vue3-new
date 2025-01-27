@@ -42,7 +42,7 @@
 								</div>
 								<div class="py-5 repeater-list-item">
 									<div for="repeater" class="block-button-wrap relative cursor-pointer"><a
-											href="/catalog/partners/" target="_self"
+											href="/partners/" target="_self"
 											class="relative text-base font-bold inline-block whitespace-nowrap text-gray-700 hover:text-gray-900">
 											<span contenteditable="false" class="text">
 												ЛОКАЦИИ
@@ -131,7 +131,7 @@
 						<div class="py-3 repeater-list-item">
 							<div>
 								<div for="repeater" class="block-button-wrap relative cursor-pointer"><a
-										href="/catalog/partners/" target="_self"
+										href="/partners/" target="_self"
 										class="relative text-base font-bold inline-block whitespace-nowrap "> <span
 											contenteditable="false" class="text">
 											ЛОКАЦИИ

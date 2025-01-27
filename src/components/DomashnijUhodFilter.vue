@@ -11,7 +11,8 @@
 					<div value="" class="filters-box">
 						<div class="relative">
 							<button @click="toggleFilter()" class="filters-box-collapse_btn">
-								+ Показать фильтры
+								<span v-if="isFilterOpen">+ Показать фильтры </span> 
+								<span v-if="!isFilterOpen">- Скрыть фильтры</span>
 							</button>
 						</div>
 						<div v-if="isFilterOpen" class="container mt-12">

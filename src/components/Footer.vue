@@ -32,8 +32,8 @@
 											</span> </a></div>
 								</li>
 								<li>
-									<div class="block-button-wrap"><a href="/catalog/partners/" target="_self"
-											class="relative"> <span contenteditable="false" class="text">
+									<div class="block-button-wrap"><a href="/partners/" target="_self" class="relative">
+											<span contenteditable="false" class="text">
 												Локации
 											</span> </a></div>
 								</li>

@@ -4,7 +4,7 @@
 			<li v-for="item in menuItems" :key="item.name">
 				<div class="flex items-center text-sm border-r">
 					<div class="block-button-wrap">
-						<router-link :to="item.link" @click.native="selectItem(item)" target="_self" 
+						<router-link :to="item.link" @click="selectItem(item)" target="_self" 
 							class="relative font-medium mr-2"
 							:class="`${textColor} ${textHoverColor}`"
 						> 

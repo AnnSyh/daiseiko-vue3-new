@@ -81,7 +81,7 @@
 								</div>
 								<div class="footer-button-wrap">
 									<div class="block-button-wrap">
-										<a href="/catalog/partners/" target="_blank" class="relative btn btn-primary">
+										<a href="/partners/" target="_blank" class="relative btn btn-primary">
 											<span class="text">
 												В раздел
 											</span>

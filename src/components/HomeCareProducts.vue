@@ -11,7 +11,7 @@
 				<div class="container">
 					<div class="mx-auto max-w-full">
 						<div class="mb-8 text-center">
-							<div class="mb-4 fs-2 font-medium  block-text js_wysiwyg_d20054_t1737099068830_r84">
+							<div class="mb-4 fs-2 font-medium  block-text">
 								<p class="tt-p">Продукты для домашнего ухода</p>
 							</div>
 						</div>
@@ -32,13 +32,11 @@
 												{{ item.title }}
 											</h2>
 											<p class="min-width-10 min-height-10 fs-5 font-medium mt-1  block-text">
-												Remover for point make-up
+												{{ item.subtitle }}
 											</p>
 										</div>
-										<div class="fs-6  block-text js_wysiwyg_d20054_t1737099068866_r90">
-											<p class="tt-p">Это очищающее средство разработано, в частности, для
-												быстрого снятия макияжа, в том числе водостойкого, с кожи вокруг
-												глаз и губ.</p>
+										<div class="fs-6  block-text ">
+											<p class="tt-p">{{ item.description }}</p>
 										</div>
 										<div class="flex-1 flex flex-col justify-end">
 											<div class="text-sm italic">

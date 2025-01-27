@@ -12,6 +12,8 @@ import AkademiyaDaiseiko from '@/views/AkademiyaDaiseiko.vue'
 import UsloviyaObucheniya from '@/views/UsloviyaObucheniya.vue'
 import Procedury from '@/views/Procedury.vue'
 import Procedura from '@/views/ProceduraView.vue'
+import Partners from '@/views/Partners.vue'
+import Partner from '@/views/PartnerView.vue'
 
 
 
@@ -28,7 +30,9 @@ const routes = [
 	{ path: '/akademiya-daiseiko', component: AkademiyaDaiseiko},
 	{ path: '/akademiya-daiseiko/usloviya-obucheniya', component: UsloviyaObucheniya},
 	{ path: '/procedury', component: Procedury},
-	{ path: '/procedury/procedura', component: Procedura}
+	{ path: '/procedury/procedura', component: Procedura},
+	{ path: '/partners', component: Partners},
+	{ path: '/partners/partner', component: Partner}
   ];
   
   const router = createRouter({
