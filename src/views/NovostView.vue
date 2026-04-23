@@ -16,9 +16,9 @@
 			<div class="overflow-hidden mb-6">
 				<div class="article-header-image">
 					<div class="mx-auto max-w-5xl image-wrap">
-						<img	
-							src="../../public/images/forlled-anons-bez-ceny_resize_w1100_h.webp"
-							alt="" loading="lazy" class="article-lead-image"></div>
+						<img src="/images/forlled-anons-bez-ceny_resize_w1100_h.webp" alt="" loading="lazy"
+							class="article-lead-image">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -26,10 +26,10 @@
 			<div class="grid grid-cols-1 md:grid-cols-2 pb-3 mb-8 border-b panel-theme-default">
 				<div class="flex items-center gap-3">
 					<div>Поделиться:</div>
-					<div  class="share_list flex items-center">
-						<a href="#" target="_blank" class="m-3 icon-vk"></a> 
-						<a href="#" target="_blank" class="m-3 icon-odnoklassniki"></a> 
-						<a href="#" target="_blank" class="m-3 icon-fb"></a> 
+					<div class="share_list flex items-center">
+						<a href="#" target="_blank" class="m-3 icon-vk"></a>
+						<a href="#" target="_blank" class="m-3 icon-odnoklassniki"></a>
+						<a href="#" target="_blank" class="m-3 icon-fb"></a>
 						<a href="#" target="_blank" class="m-3 icon-telegram"></a>
 					</div>
 				</div>
@@ -46,17 +46,17 @@
 						амулет-бусина ДЗИ, старинный тибетский драгоценный камень жизни. </p>
 					<h2 id="" class="titles  text-left"> Forlle’d</h2>
 					<div class="card_in_content-image">
-						<div class="image"> 
-							<img
-								src="https://app.daiseiko.ru/storage/832/forlled-anons-bez-ceny_resize_w900_h.jpg"
-								alt=""> </div>
+						<div class="image">
+							<img src="https://app.daiseiko.ru/storage/832/forlled-anons-bez-ceny_resize_w900_h.jpg"
+								alt="">
+						</div>
 					</div>
 					<p> <b>Набор «Преображение»</b> </p>
 					<ul>
 						<li> Крем для век Hyalogyaily and nightly cream for eyes, 9г </li>
 						<li> Омолаживающая маска на основе трех форм коллагена NEW </li>
-						<li> Эксклюзивный ювелирный аксессуар из натурального камня Змеевика. 
-								</li>
+						<li> Эксклюзивный ювелирный аксессуар из натурального камня Змеевика.
+						</li>
 					</ul>
 					<p> <b>Набор «Великолепие»</b> </p>
 					<ul>
@@ -68,15 +68,15 @@
 					</ul>
 					<h2 id="" class="titles  text-left"> Nimue </h2>
 					<div class="card_in_content-image		">
-						<div class="image"> 
-							<img
-								src="https://app.daiseiko.ru/storage/833/nimue-anons-bez-ceny_resize_w900_h.jpg"
-								alt=""> </div>
+						<div class="image">
+							<img src="https://app.daiseiko.ru/storage/833/nimue-anons-bez-ceny_resize_w900_h.jpg"
+								alt="">
+						</div>
 					</div>
 					<p> <b>Набор «Идеальная защита»</b> </p>
 					<ul>
 						<li> Бальзам для губ гидрозащита, 5мл </li>
-						<li> Защитный крем от влияния окружающей среды, 100мл  </li>
+						<li> Защитный крем от влияния окружающей среды, 100мл </li>
 						<li> Эксклюзивный ювелирный аксессуар из натурального камня Змеевика. </li>
 					</ul>
 					<p> <b>Набор</b><b>«Идеальная пара»</b> </p>
@@ -85,7 +85,7 @@
 						<li> Антивозрастной крем для глаз, 15мл </li>
 						<li> Эксклюзивный ювелирный аксессуар из натурального камня Змеевика. </li>
 					</ul>
-					<p>   </p>
+					<p> </p>
 					<p> Предложение ограничено, не суммируется с другими акциями. </p>
 					<p> Набор составлен для популяризации бренда и увеличения продаж на территории РФ. </p>
 					<p> По вопросам приобретения обращайтесь, пожалуйста, к торговым представителям бренда или
@@ -93,7 +93,7 @@
 				</div>
 			</div>
 		</div>
-	</article> 
+	</article>
 </template>
 
 <script>

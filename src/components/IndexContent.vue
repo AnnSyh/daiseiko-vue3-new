@@ -24,7 +24,7 @@
 							>
 								<h2 class="tt-h"><em>{{ item.title }}</em></h2>
 								<p v-if="item.subtitle" class="tt-h">{{ item.subtitle }}</p>
-	
+
 							</div>
 							<div :data-aos="item.direction ? 'slide-left': 'slide-right'"
 								  class="description mb-6 block-text  aos-init aos-animate"
@@ -32,17 +32,17 @@
 								<p class="tt-p" v-html="item.content"></p>
 							</div>
 							<div v-if="item.btnText" class="block-button-wrap">
-								<a :href="`${item.btnhref}`" target="_self" class="relative btn btn-primary"> 
+								<a :href="`${item.btnhref}`" target="_self" class="relative btn btn-primary">
 									<span  class="text">
-										{{ item.title }}
-									</span> 
+										{{ item.btnText }}
+									</span>
 								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-	
+
 		</div>
 	</div>
 </template>

@@ -2,7 +2,7 @@
 	<!-- -------------------Наши преподаватели----------------- -->
 	<div id="block-57" class="block panel block-overflow-x-clip panel-theme-light ca-01">
 		<div class="panel_background-image absolute inset-0 z-0 bg-no-repeat bg-center bg-cover bg-fixed"
-			style="background-image:url('../../public/images/depositphotos-138090318-xl-new_resize_w2500_h.jpg');">
+			style="background-image:url('/images/depositphotos-138090318-xl-new_resize_w2500_h.jpg');">
 		</div>
 		<div class="panel_mask solid-white" style="opacity:0.5;"></div>
 		<div class="relative pt-16 pb-16">
@@ -32,10 +32,10 @@
 							<div class="mx-auto max-w-full">
 								<div class="cards-holder-non-grid">
 									<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 cell-location-2-3">
-										<div v-for="item in items" :key="item.id"
-											data-aos="slide-up" class="repeater-list-item aos-init aos-animate"
-										>
-											<div class="card h-full flex flex-col theme-default border text-center hover-shadow non-plain">
+										<div v-for="item in items" :key="item.id" data-aos="slide-up"
+											class="repeater-list-item aos-init aos-animate">
+											<div
+												class="card h-full flex flex-col theme-default border text-center hover-shadow non-plain">
 												<div class="flex-1">
 													<div
 														class="card-header theme-none  pb-5 border-b border-b-1 ml-4 mr-4">
@@ -51,12 +51,14 @@
 													<div class="card-image px-4 mt-5">
 														<div for="repeater"
 															class="image-wrap rounded-full float-center bg-theme-none">
-															<img :src="`${item.img}`" loading="eager" class="rounded-full" />
+															<img :src="`${item.img}`" loading="eager"
+																class="rounded-full" />
 														</div>
 
 													</div>
 													<div class="card-body clear-both  p-4">
-														<div class="min-width-10 min-height-10 fs-4 font-medium mb-3  block-text">
+														<div
+															class="min-width-10 min-height-10 fs-4 font-medium mb-3  block-text">
 															{{ item.name }}
 														</div>
 														<div v-html="item.content"></div>
@@ -64,7 +66,7 @@
 												</div>
 											</div>
 										</div>
-								
+
 									</div>
 								</div>
 							</div>

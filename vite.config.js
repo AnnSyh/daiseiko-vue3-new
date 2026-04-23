@@ -6,6 +6,8 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+//   base: 'https://annsyh.github.io/daiseiko-vue3-new/', 
+  base: '/', 
   plugins: [
     vue(),
     vueDevTools(),

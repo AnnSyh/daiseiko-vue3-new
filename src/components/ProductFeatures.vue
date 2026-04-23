@@ -1,7 +1,7 @@
 <template>
 	<div id="block-30" class="block panel panel-theme-white fe-06">
 		<div class="panel_background-image absolute inset-0 z-0 bg-no-repeat bg-center bg-cover bg-fixed"
-			style="background-image:url('../../public/images/stop-42.webp');"></div>
+			style="background-image:url('/images/stop-42.webp');"></div>
 		<div class="panel_mask gradient-white"
 			style="background:linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);opacity:0.7;">
 		</div>
@@ -21,7 +21,7 @@
 									<div class="mt-12 sm:mt-16 lg:mt-0 mb-12 sm:mb-16 lg:mb-0 self-center">
 										<div class="relative lg:h-full">
 											<div class="relative max-w-xl mx-auto image-wrap decoration-cover-3">
-												<img src="../../public/images/forlled-hyalogy-p-effect-clearance-cleansing-2-1.jpg"
+												<img src="/images/forlled-hyalogy-p-effect-clearance-cleansing-2-1.jpg"
 													loading="lazy" class="relative filter grayscale-50 !max-w-[400px]">
 											</div>
 										</div>
@@ -64,8 +64,8 @@
 									<div class="mt-12 sm:mt-16 lg:mt-0 mb-12 sm:mb-16 lg:mb-0 self-center">
 										<div class="relative lg:h-full">
 											<div class="relative max-w-xl mx-auto image-wrap decoration-cover-3">
-												<img src="../../public/images/4603001e27c6450194296ecf79d0fd98.png"
-													loading="lazy" class="relative filter grayscale-50 !max-w-[400px]">
+												<img src="/images/4603001e27c6450194296ecf79d0fd98.png" loading="lazy"
+													class="relative filter grayscale-50 !max-w-[400px]">
 											</div>
 										</div>
 									</div>

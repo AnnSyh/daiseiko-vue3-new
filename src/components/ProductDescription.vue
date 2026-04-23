@@ -4,8 +4,7 @@
 			<div class="lg:grid lg:grid-cols-2 lg:gap-x-8">
 				<div class="lg:max-w-lg lg:self-end">
 					<div class="mt-4 mb-5">
-						<h1 contenteditable="false"
-							class="min-width-10 min-height-10 tracking-tight fs-1  block-text">
+						<h1 contenteditable="false" class="min-width-10 min-height-10 tracking-tight fs-1  block-text">
 							Очищающая эмульсия
 						</h1>
 						<h2 contenteditable="false"
@@ -15,8 +14,7 @@
 					</div>
 					<section aria-labelledby="information-heading" class="mt-2">
 						<div class="flex items-center">
-							<p contenteditable="false"
-								class="min-width-10 min-height-10 text-lg sm:text-xl block-text">
+							<p contenteditable="false" class="min-width-10 min-height-10 text-lg sm:text-xl block-text">
 								200
 							</p> <span contenteditable="false"
 								class="min-width-10 min-height-10 text-lg sm:text-xl block-text">
@@ -24,8 +22,7 @@
 							</span>
 							<div class="ml-4 pl-4 border-l border-gray-300">
 								<div class="flex flex-wrap items-center text-sm">
-									<span contenteditable="false"
-										class="min-width-10 min-height-10 mr-2 block-text">
+									<span contenteditable="false" class="min-width-10 min-height-10 mr-2 block-text">
 										Артикул:
 									</span>
 									<p contenteditable="false" class="min-width-10 min-height-10 block-text">
@@ -48,8 +45,8 @@
 				<div class="relative mt-10 lg:mt-0 lg:col-start-2 lg:row-span-2 lg:self-center">
 					<div>
 						<div class="image-wrap decoration-cover-3">
-							<img src="../../public/images/forlled-hyalogy-p-effect-clearance-cleansing-200g.webp"
-								loading="lazy" class="relative filter grayscale-50 !max-w-[400px]">
+							<img src="/images/forlled-hyalogy-p-effect-clearance-cleansing-200g.webp" loading="lazy"
+								class="relative filter grayscale-50 !max-w-[400px]">
 
 							<div style="display:none;"></div>
 						</div>
@@ -75,8 +72,7 @@
 														class="min-width-10 min-height-10 block-text">
 														Тип продукта
 													</p>
-													<div for="repeater"
-														class="text-secondary  block-text">
+													<div for="repeater" class="text-secondary  block-text">
 														очищение</div>
 												</div>
 											</div>
@@ -88,8 +84,7 @@
 														class="min-width-10 min-height-10 block-text">
 														Серия
 													</p>
-													<div for="repeater"
-														class="text-secondary  block-text">
+													<div for="repeater" class="text-secondary  block-text">
 														P-effect</div>
 												</div>
 											</div>
@@ -101,8 +96,7 @@
 														class="min-width-10 min-height-10 block-text">
 														Для кого подходит
 													</p>
-													<div for="repeater"
-														class="text-secondary  block-text">
+													<div for="repeater" class="text-secondary  block-text">
 														для мужчин и для женщин</div>
 												</div>
 											</div>
@@ -114,8 +108,7 @@
 														class="min-width-10 min-height-10 block-text">
 														Возраст
 													</p>
-													<div for="repeater"
-														class="text-secondary  block-text">
+													<div for="repeater" class="text-secondary  block-text">
 														для любого возраста</div>
 												</div>
 											</div>
@@ -127,8 +120,7 @@
 														class="min-width-10 min-height-10 block-text">
 														Кожа
 													</p>
-													<div for="repeater"
-														class="text-secondary  block-text">
+													<div for="repeater" class="text-secondary  block-text">
 														для всех типов кожи</div>
 												</div>
 											</div>
@@ -140,8 +132,7 @@
 														class="min-width-10 min-height-10 block-text">
 														Область
 													</p>
-													<div for="repeater"
-														class="text-secondary  block-text">
+													<div for="repeater" class="text-secondary  block-text">
 														уход за лицом</div>
 												</div>
 											</div>

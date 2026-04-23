@@ -1,6 +1,8 @@
 <template>
-	<div id="block-10000" class="block relative z-20 bg-transparent fo-header">
-		<div class="relative text-gray-700 pt-0 pb-0">
+	<div id="block-10000" class="block relative z-20 bg-transparent1 fo-header">
+		<div class="relative1 text-gray-700 pt-0 pb-0 11"
+			:class="{ '!bg-white !fixed inset-x-0 top-0 z-[100]': isScrolled }"
+		>
 			<div class="container m-auto">
 				<section class="relative text-gray-700">
 					<div class="flex items-center justify-between mx-auto max-w-full h-16 lg:h-24 py-2 lg:py-3 ">
@@ -169,7 +171,7 @@
 						</div>
 					</div>
 				</div>
-				<div v-if="isSearchOpen" class="search-block z-20 bg-transparent">
+				<div v-if="isSearchOpen" class="search-block z-20 bg-white">
 					<div class="container flex items-center h-16 lg:h-24 py-2 lg:py-3 ">
 						<div class="top-logo-wrapper hidden sm:flex image-wrap max-w-[130px]">
 							<a href="/" target="_self" class="">
@@ -194,28 +196,46 @@
 </template>
 
 <script>
-import { ref } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 export default {
-	setup() {
-		const isMenuOpen = ref(false);
-		const isSearchOpen = ref(false);
+    setup() {
+        const isScrolled = ref(false);
+        const isMenuOpen = ref(false);
+        const isSearchOpen = ref(false);
 
-		const toggleMenu = () => {
-			isMenuOpen.value = !isMenuOpen.value;
-		};
+        const toggleMenu = () => {
+            isMenuOpen.value = !isMenuOpen.value;
+        };
 
-		const toggleSearch = () => {
-			isSearchOpen.value = !isSearchOpen.value;
-		};
+        const toggleSearch = () => {
+            isSearchOpen.value = !isSearchOpen.value;
+        };
 
-		return {
-			isMenuOpen,
-			isSearchOpen,
-			toggleMenu,
-			toggleSearch,
-		};
-	},
+        const handleScroll = () => {
+			const isNowScrolled = window.scrollY > 10;
+			console.log('handleScroll, isNowScrolled = ', isNowScrolled);
+            if (isScrolled.value !== isNowScrolled) {
+                isScrolled.value = isNowScrolled;
+            }
+        };
+
+        onMounted(() => {
+            window.addEventListener('scroll', handleScroll);
+        });
+
+        onBeforeUnmount(() => {
+            window.removeEventListener('scroll', handleScroll);
+        });
+
+        return {
+            isScrolled,
+            isMenuOpen,
+            isSearchOpen,
+            toggleMenu,
+            toggleSearch,
+        };
+    },
 };
 </script>
 

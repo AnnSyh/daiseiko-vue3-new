@@ -72,23 +72,23 @@
 						<div
 							class="flex flex-col flex-grow flex-shrink-0 justify-between py-0 px-3 m-0 h-auto box-border md:ml-0">
 							<div class="flex justify-end items-center m-0 box-border text-lg gap-x-4 leading-4 mb-6">
-								<div class="icon-wrap"> <a href="https://vk.com/forlledrus" target="_blank" class="">
+								<div class="icon-wrap"> <a href="#" target="_blank" class="">
 										<div class="ic ic-vk"></div>
 									</a>
 
 								</div>
-								<div class="icon-wrap"> <a href="https://www.instagram.com/forlled_rus/" target="_blank"
+								<div class="icon-wrap"> <a href="#" target="_blank"
 										class="">
 										<div class="ic ic-instagram"></div>
 									</a>
 
 								</div>
-								<div class="icon-wrap"> <a href="https://t.me/forlledrus" target="_blank" class="">
+								<div class="icon-wrap"> <a href="#" target="_blank" class="">
 										<div class="ic ic-telegram"></div>
 									</a>
 
 								</div>
-								<div class="icon-wrap"> <a href="https://www.instagram.com/nimueskinrussia/"
+								<div class="icon-wrap"> <a href="#"
 										target="_blank" class="">
 										<div class="ic ic-instagram"></div>
 									</a>
@@ -104,7 +104,7 @@
 						</div>
 					</div>
 					<div class="copyright text-secondary">
-						© работает на движке<br><a href="https://www.chimera.ink/" target="_blank">chimera.ink</a></div>
+						© Все права защищены</div>
 				</div>
 			</div>
 		</div>

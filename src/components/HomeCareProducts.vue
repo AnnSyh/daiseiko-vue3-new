@@ -78,7 +78,7 @@
 									</a>
 								</div>
 								<div class="block-button-wrap">
-									<a href="domashnij-uhod/" target="_self"
+									<a href="domashnijUhod/" target="_self"
 										class="relative inline-flex items-center  btn btn-primary">
 										<span class="text">
 											Домашний уход

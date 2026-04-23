@@ -2,7 +2,7 @@
 	<!-- ADFirstBlock -->
 	<div class="block panel panel-theme-dark fo-description-pictures">
 		<div class="panel_background-image absolute inset-0 z-0 bg-no-repeat bg-center bg-cover"
-			style="background-image:url('../../public/images/depositphotos-73488859-xl_resize_w2500_h.jpg');"></div>
+			style="background-image:url('/images/depositphotos-73488859-xl_resize_w2500_h.jpg');"></div>
 		<div class="panel_mask gradient"
 			style="background:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);opacity:0.5;">
 		</div>
@@ -39,13 +39,13 @@
 								<div class="flex flex-col items-end pr-3">
 									<div data-aos="flip-right"
 										class="relative w-full mb-6 shadow-lg lg:h-72 xl:h-72 lg:w-48 xl:w-56 image-wrap decoration-cover-2 aos-init aos-animate">
-										<img src="../../public/images/dsc07303_resize_w230_h300.jpg" loading="eager"
+										<img src="/images/dsc07303_resize_w230_h300.jpg" loading="eager"
 											class="relative object-cover w-full h-full z-10">
 										<div style="display:none;"></div>
 									</div>
 									<div data-aos="flip-right"
 										class="relative w-full shadow-lg lg:h-72 xl:h-72 lg:w-48 xl:w-56 image-wrap aos-init">
-										<img src="../../public/images/1_resize_w230_h300.jpg" loading="eager"
+										<img src="/images/1_resize_w230_h300.jpg" loading="eager"
 											class="relative object-cover w-full h-full z-10">
 										<div style="display:none;"></div>
 									</div>
@@ -53,13 +53,13 @@
 								<div class="pl-3">
 									<div data-aos="flip-right"
 										class="relative w-full mb-6 shadow-lg lg:h-96 xl:h-96 lg:w-64 xl:w-80 image-wrap aos-init aos-animate">
-										<img src="../../public/images/2_resize_w330_h400.jpg" loading="eager"
+										<img src="/images/2_resize_w330_h400.jpg" loading="eager"
 											class="relative object-cover w-full h-full">
 										<div style="display:none;"></div>
 									</div>
 									<div data-aos="flip-right"
 										class="relative w-full shadow-lg lg:h-96 xl:h-96 lg:w-64 xl:w-80 image-wrap decoration-cover-4 aos-init">
-										<img src="../../public/images/dsc07357_resize_w330_h400.jpg" loading="eager"
+										<img src="/images/dsc07357_resize_w330_h400.jpg" loading="eager"
 											class="relative object-cover w-full h-full">
 										<div style="display:none;"></div>
 									</div>
